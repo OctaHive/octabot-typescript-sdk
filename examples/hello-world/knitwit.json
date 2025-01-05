@@ -1,0 +1,12 @@
+{
+  "packages": {
+    "@octahive/octabot-typescript-sdk": {
+      "witPath": "../../wit",
+      "world": "octabot"
+    }
+  },
+  "project": {
+    "worlds": ["octabot"]
+  },
+  "version": 1
+}

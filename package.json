@@ -1,0 +1,38 @@
+{
+  "name": "@octahive/octabot-typescript-sdk",
+  "version": "1.0.0",
+  "description": "Octabot SDK for typescript",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "bin": {
+    "js2w": "./bin/js2w.mjs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "postinstall": "knitwit-postinstall --wit-path ../../wit --world octabot"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "author": "Efremenko Roman",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^3.4.2",
+    "@bytecodealliance/jco": "^1.8.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@bytecodealliance/componentize-js": "^0.15.1",
+    "yargs": "^17.7.2",
+    "@fermyon/knitwit": "0.2.1"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "config": {
+    "knitwit": {
+      "witPath": "../../wit",
+      "world": "octabot"
+    }
+  }
+}
