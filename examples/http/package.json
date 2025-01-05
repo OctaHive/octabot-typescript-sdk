@@ -1,0 +1,23 @@
+{
+  "name": "http",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack --mode=production && npx mkdirp target && npx js2w -i dist.js -o target/http.wasm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Efremenko Roman",
+  "license": "MIT",
+  "devDependencies": {
+    "mkdirp": "^3.0.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.7.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "@octahive/octabot-typescript-sdk": "file:../.."
+  }
+}
