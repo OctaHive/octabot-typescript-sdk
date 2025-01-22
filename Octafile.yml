@@ -1,0 +1,14 @@
+version: 1
+
+tasks:
+  update-wit-deps:
+    shell: wit-deps update
+    dir: .
+
+  build-hello-world:
+    shell: npm run build
+    dir: ./examples/hello-world
+
+  build-http:
+    shell: npm run build
+    dir: ./examples/http
